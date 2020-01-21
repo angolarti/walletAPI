@@ -1,6 +1,5 @@
 package com.wallet.repository;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -12,12 +11,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.event.annotation.AfterTestMethod;
-import org.springframework.test.context.event.annotation.BeforeTestMethod;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.wallet.entity.User;
 
 @SpringBootTest
+@ActiveProfiles("test")
 public class UserRepositoryTest {
 	
 	private static final String EMAIL = "email@teste.com"; 
