@@ -13,7 +13,7 @@ public class UserDTO {
 	@NotNull
 	@Length(min=6, message="A senha deve conter no minimo 6 caracteres")
 	private String password;
-	@Email(message="EMail inválido")
+	@Email(message="Email inválido")
 	private String email;
 	
 	public Long getId() {
